@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F3FF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="27dp">
+
+        <!-- Nadpis -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Hoď kostkou"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#352060" />
+
+        <!-- Kostka -->
+        <TextView
+            android:id="@+id/tvDice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="⚀"
+            android:textSize="110sp"
+            android:textColor="#352060" />
+
+        <!-- Tlačítko hodit -->
+        <Button
+            android:id="@+id/btnRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hodit"
+            android:textSize="20sp" />
+
+        <!-- Základní statistiky -->
+        <TextView
+            android:id="@+id/tvRollCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Počet hodů: 0"
+            android:textSize="18sp"
+            android:textColor="#352060" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Celkový součet: 0"
+            android:textSize="18sp"
+            android:textColor="#352060" />
+
+        <TextView
+            android:id="@+id/tvHighest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nejvyšší hod: 0"
+            android:textSize="18sp"
+            android:textColor="#352060" />
+
+        <!-- Nadpis statistiky -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Statistika"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#352060" />
+
+        <!-- Statistiky -->
+        <TextView
+            android:id="@+id/tvStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="1: 0×&#10;2: 0×&#10;3: 0×&#10;4: 0×&#10;5: 0×&#10;6: 0×"
+            android:textSize="17sp"
+            android:textColor="#352060" />
+
+        <!-- Nadpis historie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Historie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#352060" />
+
+        <!-- Historie hodů -->
+        <TextView
+            android:id="@+id/tvHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Zatím žádné hody"
+            android:textSize="17sp"
+            android:textColor="#352060" />
+
+        <!-- Vymazání historie -->
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Vymazat"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
